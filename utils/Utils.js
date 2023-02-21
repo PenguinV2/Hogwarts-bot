@@ -2,6 +2,10 @@ const moment = require('moment');
 const momentDurationFormatSetup = require('moment-duration-format');
 momentDurationFormatSetup(moment);
 
+let BLOCK_INACTIVE = "\u25AC";
+let BLOCK_ACTIVE = "\uD83D\uDD18";
+let TOTAL_BLOCKS = 10;
+
 class Utils {
 
     static secondsToTime(seconds) {
@@ -85,6 +89,18 @@ class Utils {
             pageLength
         };
     };
+
+    static getProgressBar(now, total) {
+        let activeBlocks = Math.floor(now / total * TOTAL_BLOCKS)
+        let msg = BLOCK_INACTIVE;
+
+        for(let i = 0; i < TOTAL_BLOCKS; i++) {
+            msg += activeBlocks == i ? BLOCK_ACTIVE : BLOCK_INACTIVE
+        }
+
+        return msg;
+    }
+
 }
 
 module.exports = Utils;

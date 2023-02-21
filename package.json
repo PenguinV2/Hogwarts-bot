@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +22,7 @@
     "fs": "^0.0.1-security",
     "moment": "^2.29.4",
     "moment-duration-format": "^2.3.2",
+    "rand-user-agent": "^1.0.107",
     "request": "^2.88.2"
   }
 }

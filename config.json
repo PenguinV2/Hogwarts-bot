@@ -1,5 +1,4 @@
 {
-    "PREFIX": ".",
-    "BOT_TOKEN": "MTA3NTU4NTUyNjc3NTY4OTIyNg.GXmcFm.17n69Os1VSrhA8MSPy_IRnnMvPmFxoK4mo5Q-o",
-    "GENIUS_ACCESS_TOKEN": "0yhlhySZMkYads-NKZkFfbeYh6PLkdnTbLfqfKSlrUTpx5pednZ58azwqUfAfZHt"
+    "DEVELOPMENT_MODE": true,
+    "PREFIX": "."
 }

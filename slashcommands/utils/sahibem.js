@@ -5,6 +5,6 @@ const { SlashCommandBuilder } = require("discord.js");
 module.exports = {
     data: new SlashCommandBuilder().setName("sahibem").setDescription("Sahibem, üstadım, yapımcım saygıdeğer Adnan Bey hakkında bilgi verir."),
 	run: async(client, interaction) => {
-        await interaction.reply("**Sahibem**: <@524947415153770526> | `Daha fazla bilgi için DM`")
+        await interaction.reply({ content: "**Sahibem**: <@524947415153770526> | `Daha fazla bilgi için DM`", ephemeral: true })
     }
 }

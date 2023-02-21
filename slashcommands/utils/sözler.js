@@ -30,6 +30,10 @@ let words = [
 module.exports = {
     data: new SlashCommandBuilder().setName("söz").setDescription("Atalarımızdan(?) bizlere kalan yegane sözler. (Biraz küfürlüdür.)"),
 	run: async(client, interaction) => {
-        await interaction.reply("*" + words[Math.floor(Math.random() * words.length)] + "*")
+        let embed = new Discord.EmbedBuilder()
+        .setDescription(words[Math.floor(Math.random() * words.length)] + ".")
+        .setColor("White")
+
+        await interaction.reply({ embeds: [embed] })
     }
 }
