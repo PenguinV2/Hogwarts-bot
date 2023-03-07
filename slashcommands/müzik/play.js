@@ -33,7 +33,7 @@ module.exports = {
         const voiceChannel = interaction.member.voice.channel;
         if(!voiceChannel) return await interaction.reply({ content: `:x: Bu komutu kullanabilmek için herhangi bir **Ses Kanalı**'nda olmalısın!`, ephemeral: true })
 
-        if(interaction.guild.members.me.voice.channel && interaction.guild.members.me.voice.channel.id != interaction.member.voice.channel.id) return await interaction.reply({ content: `:thinking: Şu anda seninle aynı odada değilim!`, ephemeral: true })
+        if(interaction.guild.members.me.voice.channel && interaction.guild.members.me.voice.channel.id != interaction.member.voice.channel.id) return await interaction.reply({ content: `:x: Bu komutu kullanabilmek için benimle aynı kanalda olmalısın!`, ephemeral: true })
 
         let query = interaction.options.getString("şarkı");
         

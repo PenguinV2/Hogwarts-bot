@@ -1,4 +1,7 @@
 {
-    "DEVELOPMENT_MODE": true,
-    "PREFIX": "."
+    "DEVELOPMENT_MODE": false,
+    "PREFIX": ".",
+    "BOT_TOKEN": "MTA3NTU4NTUyNjc3NTY4OTIyNg.GPV5rB.kHF_6ny9viuJvRo0kZAajvERxBD1ggQPpRKyP0",
+    "GENIUS_ACCESS_TOKEN": "0yhlhySZMkYads-NKZkFfbeYh6PLkdnTbLfqfKSlrUTpx5pednZ58azwqUfAfZHt",
+    "BOT_TOKEN_DEV": "MTA3NjUzNzQyNzYwMDA4OTExOA.GSV_EE.cOP0ClEVuApNFHtYxgFUDm1m-YaH_nDKRKB51A"
 }

@@ -50,7 +50,7 @@ module.exports = {
         .setColor("White")
         .setThumbnail(client.user.avatarURL())
         .setDescription(paginated.items.join("\n"))
-        .setAuthor({ name: `${interaction.guild.name} sunucusu için Şarkı Kuyruğu`, iconURL: interaction.guild.iconURL() })
+        .setAuthor({ name: `${interaction.guild.name} sunucusu için şarkı kuyruğu`, iconURL: interaction.guild.iconURL() })
         .setFooter({ text: `Sayfa: ${page} | Toplam Sayfa: ${paginated.maxPage} | .queue ${page + 1} yazarak sonraki sayfaya geçebilirsiniz!`, iconURL: interaction.member.avatarURL() })
         .addFields(
             {
@@ -76,6 +76,11 @@ module.exports = {
             {
                 name: "Şarkı çalınan kanal",
                 value: interaction.guild.members.me.voice.channel ? "`" + interaction.guild.members.me.voice.channel.name + "`" : "`Yok`",
+                inline: true
+            },
+            {
+                name: "Ses seviyesi",
+                value: "`%" + queue.volume + "`",
                 inline: true
             }
         ).setColor("White")

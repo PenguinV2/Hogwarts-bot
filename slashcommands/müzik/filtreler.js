@@ -38,12 +38,12 @@ module.exports = {
         
         if(!filters.includes(filter)) return await interaction.reply({ content: ":x: Belirtilen filte bulunamadı.", ephemeral: true })
 
-        if(filter.toLowerCase() == "kapat") {
+        if(filter == "kapat") {
             queue.filters.clear()
             return await interaction.reply(":white_check_mark: **Tüm filtreler silindi**!");
-        } else if(filter.toLowerCase() == "hepsi") {
+        } else if(filter == "hepsi") {
             filters.forEach(f => {
-                if(f != "hepsi" || f != "kapat") queue.filters.add(f);
+                if(f.toLowerCase() != "hepsi" || f.toLowerCase() != "kapat") queue.filters.add(f);
             });
             return await interaction.reply(":white_check_mark: **Tüm filtreler eklendi**!");
         } else {
